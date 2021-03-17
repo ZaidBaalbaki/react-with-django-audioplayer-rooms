@@ -26,7 +26,6 @@ class GetRoom(APIView):
             return Response({'Not found':'Invalid Room Code'},status=status.HTTP_404_NOT_FOUND)
         return Response({'Bad Request':'please specify room code'},status=status.HTTP_400_BAD_REQUEST)
 
-<<<<<<< HEAD
 
 
 class JoinRoom(APIView):
@@ -51,8 +50,6 @@ class JoinRoom(APIView):
 
 
 
-=======
->>>>>>> d0778e282c5d291803693f3c4c6c82e00954b720
 class CreateRoomView(APIView):
     serializer_class = CreateRoomSerializer
 
